@@ -1,0 +1,49 @@
+/* Structure */
+body{
+    background:url(images/Snow\ Background.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background: white;
+    width: 70%;
+    margin:auto; /* center */
+    padding:5px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    box-shadow: 10px 10px lightblue;
+}
+
+header, footer{
+    background: seagreen;
+    padding: 5px;
+    color: white;
+}
+/* Navigation */
+#main-nav ul{
+    padding-left: 0;
+}
+
+#main-nav li{
+    list-style-type: none; /* Removes Bullets */
+    display: inline-block; /* Moves Bullets next to each other */
+}
+
+#main-nav a{
+    color: white;
+    text-decoration: none;  /*Removes Underlines */
+    border-bottom: 1px solid transparent;
+}
+
+#main-nav a:hover{
+    color: crimson;  /*Makes mouse color while hovering*/
+    border-bottom: 1px solid white;
+}
+
+/* Typography */
+header h1{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+}
