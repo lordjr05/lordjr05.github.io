@@ -26,7 +26,7 @@ header, footer{
 
 #main-nav li{
     list-style-type: none; /* Removes Bullets */
-    display: inline-block; /* Moves Bullets next to each other */
+    display: inline-block; /* Moves Bullets next to each other */ 
 }
 
 #main-nav a{

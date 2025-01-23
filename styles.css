@@ -1,0 +1,44 @@
+/*Structure*/
+body{
+    background:url(images/beach.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    background: white;
+    width: 70%;
+    margin:auto;
+    padding: 5px;
+    border: 1px skyblue;
+    border-radius: 5px;
+    box-shadow: 10px 10px grey;
+}
+
+header,footer{
+    background: seagreen;
+    color: white;
+    padding: 5px;
+}
+/*Navigation*/
+#location-nav ul{
+    padding-left: 0;
+}
+#location-nav li{
+    list-style-type: none;
+}
+#location-nav a{
+    color:maroon;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+#location-nav a:hover{
+    color: cornflowerblue;
+    border-bottom: 1px solid white;
+}
+/*Typography*/
+header h1{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+}
