@@ -1,3 +1,4 @@
+/*Structure*/
 body {
     font-family:Arial, Helvetica, sans-serif;
     color: black;
@@ -8,7 +9,6 @@ body {
     min-height: 100vh;
     justify-content: flex-start;
 }
-
 .title-headers {
     display: flex;
     justify-content: space-between;
@@ -16,14 +16,12 @@ body {
     padding: 20px;
     gap: 10px;
 }
-
 .title-headers h1 {
     margin: 0;
     flex: 1;
     text-align: left;
     font-size: large;
 }
-
 .title-headers h2 {
     margin: 0;
     flex: 0;
@@ -32,11 +30,9 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
-
 footer {
     text-align: center;
 }
-
 .main {
     flex: 1;
     display: flex;
@@ -44,12 +40,10 @@ footer {
     align-items: center;
     gap: 10px;
 }
-
 .assignment-header {
     text-align: center;
     font-size: xx-large;
 }
-
 .assignment-subheaders {
     display: flex;
     justify-content: center;
