@@ -40,11 +40,11 @@ footer {
     align-items: center;
     gap: 10px;
 }
-.assignment-header {
+.assignment-headers, .project-headers {
     text-align: center;
     font-size: xx-large;
 }
-.assignment-subheaders {
+.assignment-subheaders, .project-subheaders {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -52,14 +52,14 @@ footer {
     padding: 0;
 }
 
-.assignment img {
+.assignment img, .project img {
     width: 100%;
     max-width: 300px;
     height: auto;
     border-radius: 8px;
 }
 
-.assignment {
+.assignment, .project {
     border: 1px solid;
     padding: 15px;
     text-align: center;
@@ -68,7 +68,7 @@ footer {
     margin: 0 auto;
 }
 
-.assignment h2 {
+.assignment h2, .project h2 {
     font-size: large;
     font-weight: bold;
     color: black;
