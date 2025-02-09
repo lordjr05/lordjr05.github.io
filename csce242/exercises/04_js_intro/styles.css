@@ -64,9 +64,16 @@ main {
 }
 
 .sad{
-    color: purple;
+    color:blue;
 }
 
+.happy{
+    color:pink;
+}
+
+.hidden{
+    display: none;
+}
 /*Animation Fun*/
 #animation-fun{
     background-color: var(--main-background-color);

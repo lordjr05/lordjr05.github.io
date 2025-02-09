@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 5</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Intro to JavaScript</h1>
+        <div class="all-sections">
+            <section class="columns" id="hello">
+                <h3>Say Hello</h3>
+                <button onclick="addHello()">Add Hello</button>
+                <div id="hello-container"></div>
+                
+            </section>
+            <section class="columns">
+                <h3>Pick a Color</h3>
+                <div class="container">
+                    <button class="button" id="colorButton" onclick="toggleColorPicker()">Pick a Color</button>
+                    <input type="color" id="colorPicker" class="color-picker" onchange="changeColor()">
+                    <div class="shape" id="shape"></div>
+                </div>
+            </section>
+            <section class="columns">
+                <h3>Image Change</h3>
+                <img id="randomImage" src="https://picsum.photos/200" alt="Random Image" onclick="refreshImage()" style="display: block; margin: 0 auto;">            
+            </section>
+        </div>
+        <footer>
+            <p>&copy; Jeffrey Lord</p>
+        </footer>
+    </body>
+
+</html>
