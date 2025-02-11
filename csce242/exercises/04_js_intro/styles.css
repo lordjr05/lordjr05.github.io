@@ -74,6 +74,9 @@ main {
 .hidden{
     display: none;
 }
+.hide-small{
+    display: none;
+}
 /*Animation Fun*/
 #animation-fun{
     background-color: var(--main-background-color);
@@ -119,6 +122,12 @@ main {
 
 
 /* Navigation */
+#toggle-nav div{
+    width: 25px;
+    height: 2px;
+    background-color: var(--gallery-color);
+    margin: 6px 0;
+}
 #sub-nav{
     position: absolute;
     top: 0;
@@ -167,13 +176,13 @@ footer p {
 }
 
 /* Larger screens */
-@media only screen and (min-width: 768px) { 
-    .columns {
-        display:flex;
-    }
-
+@media only screen and (min-width: 1200px) { 
     #main-nav li {
         flex:1;
+        border-bottom:0;
+    }
+    #toggle-nav{
+        display: none;
     }
 
     #main-nav li:not(:last-child) {
@@ -205,12 +214,45 @@ footer p {
         flex-basis:30%;
     }
 
-    .idea-img p{
-        position: absolute;
-        padding: 5px;
-        background: var(--primary-color);
-        color: white;
-        bottom: 0;
+    .idea-img p {
+        position:absolute;
+        padding:5px;
+        bottom:0;
     }
-    
+
+    .examples section {
+        width:18%;
+        padding:10px;
+        margin:0;
+    }
+    .hide-small{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 800px) { 
+    .columns {
+        display:flex;
+    }
+
+    .gallery {
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+
+    .examples {
+        flex-wrap:wrap;
+        justify-content:space-between;
+        margin:0;
+        padding:0;
+    }
+
+    .examples section {
+        max-width:30%;
+        padding:10px;
+        margin:0;
+    }
+
+    .examples section:nth-child( even ) {
+        background:var(--main-background-color);
+    }
 }

@@ -17,7 +17,9 @@ body {
     border-radius:5px;
  
 }
-
+.hide-small{
+    display: none;
+}
 header, footer {
     background: var(--primary-color);
     color:white;
@@ -32,7 +34,7 @@ main {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    
+    max-width: 100%;   
 }
 #imgM{
     position: relative;
@@ -44,6 +46,12 @@ main {
 }
 h2 {    
     text-align: center;
+}
+#toggle-nav div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
 }
 /*Playing With Position*/
 #logo{
@@ -111,5 +119,8 @@ footer p {
     }
     #imgM,#imgB{
         flex: 0 70%;
+    }
+    #toggle-nav{
+        display: none;
     }
 }
