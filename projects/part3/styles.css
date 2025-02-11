@@ -47,6 +47,9 @@ main {
 h2 {    
     text-align: center;
 }
+h3{
+    text-align: center;
+}
 #toggle-nav div{
     width: 25px;
     height: 2px;
@@ -122,5 +125,8 @@ footer p {
     }
     #toggle-nav{
         display: none;
+    }
+    .hide-small{
+        display: flex;
     }
 }
