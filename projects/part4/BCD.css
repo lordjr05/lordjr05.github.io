@@ -34,6 +34,15 @@ img{
     margin-right: auto;
 
 }
+#toggle-nav div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hide-small{
+    display: none;
+}
 .menu-image p{
  
     padding: 5px;
@@ -108,5 +117,11 @@ footer p {
     }
     #imgM,#imgB{
         flex: 0 70%;
+    }
+    #toggle-nav{
+        display: none;
+    }
+    .hide-small{
+        display: flex;
     }
 }

@@ -83,6 +83,15 @@ footer p {
 h2{
     text-align: center;
 }
+#toggle-nav div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hide-small{
+    display: none;
+}
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -114,5 +123,10 @@ h2{
     #main-nav li:not(:last-child) {
         border-right: 1px solid white;
     }
-    
+    #toggle-nav{
+        display: none;
+    }
+    .hide-small{
+        display: flex;
+    }
 }

@@ -69,7 +69,15 @@ p{
     background: var(--gallery-color);
 }
 
-
+#toggle-nav div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hide-small{
+    display: none;
+}
 #main-nav a {
     color:black;
     text-decoration: none;  /* remove the underlines */
@@ -128,5 +136,10 @@ footer p {
     #main-nav li:not(:last-child) {
         border-right: 1px solid white;
     }
-    
+    #toggle-nav{
+        display: none;
+    }
+    .hide-small{
+        display: flex;
+    }
 }

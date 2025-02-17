@@ -91,10 +91,22 @@ footer p {
 h2, p{
     text-align: center;
 }
+#toggle-nav div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hide-small{
+    display: none;
+}
 .image-container {
     width: 50%; /* Takes up about 2/3 of the area */
 }
-
+img{
+    width: 400px;
+    height: 300px;
+}
 .image-container img {
     height: auto;
     border-radius: 5px;
@@ -132,5 +144,10 @@ h2, p{
     #main-nav li:not(:last-child) {
         border-right: 1px solid white;
     }
-    
+    #toggle-nav{
+        display: none;
+    }
+    .hide-small{
+        display: flex;
+    }
 }
