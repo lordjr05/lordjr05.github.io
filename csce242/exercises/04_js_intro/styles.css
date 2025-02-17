@@ -1,12 +1,13 @@
 /* Structure */
-:root{
-    --main-background-color: #CDECEF;
-    --primary-color: #2B91AD;
-    --gallery-color: #FFB58A;
+:root {
+    --main-background-color:#CDECEF;
+    --primary-color:#2B91AD;
+    --gallery-color:#FFB58A;
+    --circle-color: black;
 }
 
 body {
-    background: var(--main-background-color);
+    background:var(--main-background-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,10 +20,15 @@ body {
 }
 
 header, footer {
-    background: var(--primary-color);
+    background:var(--primary-color);
     color:white;
-    position: relative;
-    padding: 20px 0;
+    position:relative;
+    padding:20px 0;
+}
+
+header {
+   /* position:fixed;
+    width:70%;*/
 }
 
 main {
@@ -34,24 +40,24 @@ main {
 }
 
 .idea:nth-child( even ) {
-    background: var(--main-background-color);
+    background:var(--main-background-color);
 }
 
 .idea-img {
     margin-top:20px;
     padding:5px;
     text-align: center;
-    position: relative;
+    position:relative;
 }
 
-.idea-img p{
-    padding: 5px;
-    background: var(--primary-color);
-    color: white;
+.idea-img p {
+    padding:5px;
+    background:var(--primary-color);
+    color:white;
 }
 
 .gallery {
-    background: var(--gallery-color);
+    background:var(--gallery-color);
 }
 
 .links {
@@ -63,107 +69,138 @@ main {
     padding:5px;
 }
 
-.sad{
-    color:blue;
-}
-
-.happy{
+.happy {
     color:pink;
 }
 
-.hidden{
-    display: none;
-}
-.hide-small{
-    display: none;
-}
-/*Animation Fun*/
-#animation-fun{
-    background-color: var(--main-background-color);
-    padding: 20px;
-    height: 200px;
-    position: relative;
+.sad {
+    color:purple;
 }
 
-#ball{
+.hidden {
+    display:none;
+}
+
+.hide-small {
+    display:none;
+}
+
+/* Animations */
+#animation-fun {
+    background:#a0ccd8;
+    padding:20px;
+    height:300px;
+    position:relative;
+}
+
+#ball-area {
+    position:relative;
+}
+
+#ball, #circle {
     height: 30px;
-    width: 30px;
-    background: blue;
-    border-radius: 50px;
+    width:30px;
+    background:var(--circle-color);
+    border-radius:50px;
+    position:relative;
+    left:35%;
+}
+
+#ball {
     animation-name: fun;
-    position: relative;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
-@keyframes fun{
-    0% {background-color: red;
-        top: 0;
-        left: 0;
+/* Donations */
+#txt-donation {
+    max-width:40%;
+}
+
+#thermometer {
+    width:25%;
+    height:200px;
+    background:white;
+    margin-right:10%;
+    border:2px solid var(--primary-color);
+}
+
+.error{
+    color: darkred;
+}
+
+@keyframes fun {
+    0% {
+        background-color: red;
+        top:0;
+        left:0;
     }
     20% {background-color: orange;}
-    40% {background-color: yellow;
-        left: 100px;
-        top: 200px;
+    40% {background-color: yellow;}
+    60% {background-color:aqua;
+        left:100px;
+        top:200px;
     }
-    60% {background-color: green;}
+    70% {background-color: green;}
     80% {background-color: indigo;}
-    100% {background-color: violet;
-          top: 200px;
-          left: 0;  
+    100% {
+        background-color: violet;
+        top:0px;
+        left:0;
     }
-}
+  }
 
-/*Playing With Position*/
-#main-logo{
-    position: absolute;
-    left: 50px;
+/* Playing with positioning */
+#main-logo {
+    position:absolute;
+    left:50px;
 }
-
 
 /* Navigation */
-#toggle-nav div{
-    width: 25px;
-    height: 2px;
-    background-color: var(--gallery-color);
-    margin: 6px 0;
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:var(--gallery-color);
+    margin:6px 0;
 }
-#sub-nav{
-    position: absolute;
-    top: 0;
-    right: 5px;
+
+#sub-nav {
+    position:absolute;
+    top:0;
+    right:5px;
 }
 
 #main-nav ul, #sub-nav ul {
     padding-left:0;
 }
 
-#main-nav li, #sub-nav li{
-    list-style-type: none;
+#main-nav li, #sub-nav li {
+    list-style-type: none;  /* remove the bullets */
     text-align: center;
     border-bottom:1px solid white;
 }
 
 #main-nav li {
-    background: var(--gallery-color);
+    background:var(--gallery-color);
+    font-size:1.5em;
 }
 
-#sub-nav li{
-    margin: 0 5px;
+#sub-nav li {
+    margin:0 5px;
 }
 
-#main-nav a, #sub-nav a{
+#main-nav a, #sub-nav a {
     color:white;
     text-decoration: none;  /* remove the underlines */
     border-bottom:1px solid transparent;
 }
 
-#main-nav a:hover, #sub-nav a:hover{
+#main-nav a:hover, #sub-nav a:hover {
     border-bottom:1px solid white;
 }
 
-#main-nav a:hover{
-    color: crimson;
+#main-nav a:hover {
+    color:var(--primary-color);
 }
 
 /* Typography */
@@ -175,14 +212,44 @@ footer p {
     text-align:center;
 }
 
+
+/* Medium screens */
+@media only screen and (min-width: 800px) { 
+    .columns {
+        display:flex;
+    }
+
+    .gallery {
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+
+    .examples {
+        flex-wrap:wrap;
+        justify-content:space-between;
+        margin:0;
+        padding:0;
+    }
+
+    .examples section {
+        max-width:30%;
+        padding:10px;
+        margin:0;
+    }
+
+    .examples section:nth-child( even ) {
+        background:var(--main-background-color);
+    }
+}
 /* Larger screens */
 @media only screen and (min-width: 1200px) { 
+    #toggle-nav {
+        display:none;
+    }
+
     #main-nav li {
         flex:1;
         border-bottom:0;
-    }
-    #toggle-nav{
-        display: none;
     }
 
     #main-nav li:not(:last-child) {
@@ -225,34 +292,8 @@ footer p {
         padding:10px;
         margin:0;
     }
-    .hide-small{
-        display: flex;
-    }
-}
-@media only screen and (min-width: 800px) { 
-    .columns {
+
+    .hide-small {
         display:flex;
-    }
-
-    .gallery {
-        flex-wrap:wrap;
-        justify-content: space-between;
-    }
-
-    .examples {
-        flex-wrap:wrap;
-        justify-content:space-between;
-        margin:0;
-        padding:0;
-    }
-
-    .examples section {
-        max-width:30%;
-        padding:10px;
-        margin:0;
-    }
-
-    .examples section:nth-child( even ) {
-        background:var(--main-background-color);
     }
 }
