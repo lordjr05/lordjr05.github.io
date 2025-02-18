@@ -1,0 +1,87 @@
+/* --- General Styles --- */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+/* --- Navigation Menu --- */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-bar {
+    display: none; /* Hidden on large screens */
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.arrow {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu-items li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-items li:hover {
+    background-color: #555;
+}
+
+/* Pipe separator between menu items */
+.menu-items li:not(:last-child)::after {
+    content: " | ";
+    color: white;
+}
+.container{
+    background-color: grey;
+}
+/* Hidden Sections */
+.hidden {
+    display: none;
+}
+
+
+/* Small screen adjustments */
+@media (max-width: 600px) {
+    .menu-bar {
+        display: flex; /* Show menu bar only on small screens */
+    }
+
+    .menu-items {
+        display: none; /* Hide menu initially */
+        flex-direction: column;
+        background-color: #444;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .show-menu {
+        display: flex; /* Show menu when toggled */
+    }
+
+    .rotate-arrow {
+        transform: rotate(180deg);
+    }
+}
