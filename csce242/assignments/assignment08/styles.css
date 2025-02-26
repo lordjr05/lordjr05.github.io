@@ -1,0 +1,131 @@
+/*General*/
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+#image-titles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 40px;
+  padding: 20px;
+}
+
+#image-titles h3 {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 20px 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 4px 4px 12px rgba(255, 0, 0, 0.3); 
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 30%;
+  color: #333;
+}
+
+#image-titles h3:hover {
+  background-color: #4caf50;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 15px rgba(255, 0, 0, 0.5); 
+}
+
+/* Popup Styling */
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#popup.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgba(255, 0, 0, 0.3); 
+  text-align: center;
+  max-width: 400px; 
+  width: 90%;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+#popup.visible #popup-content {
+  transform: scale(1);
+}
+
+#popup img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.2);
+}
+
+#close {
+  font-size: 2rem;
+  color: #ff3333;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: color 0.2s ease;
+}
+
+#close:hover {
+  color: #ff1a1a;
+}
+
+footer, p, header {
+  text-align: center;
+}
+
+/* Flex */
+@media (max-width: 768px) {
+  #image-titles h3 {
+    font-size: 1.2rem;
+    margin: 10px;
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  #image-titles {
+    justify-content: center;
+  }
+
+  #image-titles h3 {
+    font-size: 1rem;
+    flex-basis: 100%;
+    margin: 10px;
+    padding: 12px;
+  }
+
+  #popup-content {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  #popup img {
+    max-width: 100%;
+  }
+}
