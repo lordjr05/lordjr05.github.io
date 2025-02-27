@@ -1,9 +1,11 @@
+
 /* Structure */
 :root {
     --main-background-color:#CDECEF;
     --primary-color:#2B91AD;
     --gallery-color:#FFB58A;
     --circle-color: black;
+    --donation-percent: 0%;
 }
 
 body {
@@ -23,7 +25,11 @@ header, footer {
     background:var(--primary-color);
     color:white;
     position:relative;
-    padding:20px 0;
+    padding:20px 0 10px;
+}
+
+header {
+    padding-bottom:3px;
 }
 
 header {
@@ -60,6 +66,11 @@ main {
     background:var(--gallery-color);
 }
 
+/* Slideshow */
+#slideshow img {
+    max-width:100%;
+}
+
 .links {
     background:#D3DDEA;
 }
@@ -75,6 +86,12 @@ main {
 
 .sad {
     color:purple;
+}
+
+.sub-section a {
+    text-decoration:none;
+    color:var(--primary-color);
+    text-align:center;
 }
 
 .hidden {
@@ -120,13 +137,18 @@ main {
 #thermometer {
     width:25%;
     height:200px;
-    background:white;
     margin-right:10%;
     border:2px solid var(--primary-color);
+    background:linear-gradient(0deg, red 0% var(--donation-percent), white var(--donation-percent) 100%);
 }
 
-.error{
-    color: darkred;
+.error {
+    color:darkred;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
 }
 
 @keyframes fun {
