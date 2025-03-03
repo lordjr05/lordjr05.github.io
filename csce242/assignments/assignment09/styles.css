@@ -1,0 +1,224 @@
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;  
+    color: #333;              
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);  
+  }
+  
+  /* Title Styling */
+  h1 {
+    font-size: 3em;
+    color: #ff6347; 
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Container for Pizza Boxes - Flexbox layout */
+  .pizza-container {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    gap: 20px; /* Spacing between pizza boxes */
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1300px; 
+    box-sizing: border-box;  
+  }
+  
+  /* Individual Pizza Box */
+  .pizza-box {
+    width: 200px; /* Fixed width to allow 5 items to fit on the screen */
+    height: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    border: 2px solid #f0a500;  
+  }
+  
+  .pizza-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #ff6347;  
+  }
+  
+  /* Pizza Image Styling*/
+  .pizza-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pizza-box:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Pizza Title */
+  .pizza-box h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f77f00; 
+  }
+  
+  /* Modal Styles */
+  .w3-modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffddc1 0%, #ffabab 100%); 
+  }
+  
+  .w3-modal-content h2 {
+    font-size: 2.5em;
+    color: #ff6347;
+    margin-bottom: 20px;
+  }
+  
+  .pizza-image {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 1s ease-in-out;
+  }
+  
+  /* Modal Text Content */
+  p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #444; 
+  }
+  
+  strong {
+    color: #ff6347;  
+  }
+  
+  /* Close Button */
+  .w3-button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .w3-button:hover {
+    background-color: #e55347; 
+  }
+  
+  /* Modal Background Styling */
+  .w3-modal {
+    background: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .w3-button.w3-xlarge {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  /* Animations for Modal */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .w3-modal-content {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* MEDIA QUERIES FOR SMALLER DEVICES */
+  
+  /* For screens smaller than 768px (tablets, small desktops) */
+  @media (max-width: 768px) {
+    .pizza-container {
+      justify-content: center;
+      flex-wrap: nowrap; /* Prevent wrapping */
+    }
+  
+    .pizza-box {
+      width: 200px;
+      height: 300px;
+    }
+  
+    .pizza-box img {
+      height: 180px;
+    }
+  
+    .w3-modal-content {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  
+  /* For screens smaller than 480px (mobile devices) */
+  @media (max-width: 480px) {
+    .pizza-container {
+      flex-wrap: nowrap; /* Prevent wrapping */
+      justify-content: center;
+    }
+    .pizza-box {
+      width: 45%; 
+      height: 250px;
+    }
+    .pizza-box img {
+      height: 150px;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    .w3-modal-content {
+      width: 90%;
+      max-width: 350px;
+    }
+  }
+  
