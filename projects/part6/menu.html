@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="menu.css">
+    <title>Lord of the Bites</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <img id="logo" src="images/logo.jpg" alt="logo">
+            <h1>Lord of the Bites</h1>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="columns hide-small">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reservation.html">Reservations</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="grid-wrapper">
+                <h2>Starters</h2>
+                <div class="grid-container">
+                    <div class="grid-item" data-id="1">
+                        <img src="images/BCD.jpg" alt="Buffalo Chicken Dip">
+                        <p>Buffalo Chicken Dip</p>
+                    </div>
+                    <div class="grid-item" data-id="2">
+                        <img src="images/bread.jpeg" alt="Bread Service">
+                        <p>Bread Service</p>
+                    </div>
+                    <div class="grid-item" data-id="3">
+                        <img src="images/spring roll.webp" alt="Spring Rolls">
+                        <p>Spring Rolls</p>
+                    </div>
+                    <div class="grid-item" data-id="4">
+                        <img src="images/wings.jpeg" alt="Signature Wings">
+                        <p>Signature Wings</p>
+                    </div>
+                </div>
+
+                <h2>Entrees</h2>
+                <div class="grid-container">
+                    <div class="grid-item" data-id="5">
+                        <img src="images/filet.jpeg" alt="Filet Mignon">
+                        <p>Filet Mignon</p>
+                    </div>
+                    <div class="grid-item" data-id="6">
+                        <img src="images/pasta.jpeg" alt="Pasta Piccata">
+                        <p>Pasta Piccata</p>
+                    </div>
+                    <div class="grid-item" data-id="7">
+                        <img src="images/crab.jpeg" alt="Crab Cakes">
+                        <p>Crab Cakes</p>
+                    </div>
+                    <div class="grid-item" data-id="8">
+                        <img src="images/shrimp.webp" alt="Shrimp Pasta">
+                        <p>Shrimp Pasta</p>
+                    </div>
+                </div>
+
+                <h2>Desserts</h2>
+                <div class="grid-container">
+                    <div class="grid-item" data-id="9">
+                        <img src="images/pie.jpg" alt="Key Lime Pie">
+                        <p>Key Lime Pie</p>
+                    </div>
+                    <div class="grid-item" data-id="10">
+                        <img src="images/chocolate.jpeg" alt="Chocolate Cake">
+                        <p>Chocolate Cake</p>
+                    </div>
+                    <div class="grid-item" data-id="11">
+                        <img src="images/cheesecake.jpg" alt="Cheesecake">
+                        <p>Cheesecake</p>
+                    </div>
+                    <div class="grid-item" data-id="12">
+                        <img src="images/cannoli.jpeg" alt="Cannoli">
+                        <p>Cannoli</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Lord of the Bites - Jeffrey Lord</p>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="w3-modal" id="menu-modal">
+        <div class="w3-modal-content">
+            <span class="w3-button w3-display-topright" onclick="closeModal()">&times;</span>
+            <img src="" alt="Item Image">
+            <h2></h2>
+            <p class="menu-description"></p>
+            <p class="menu-price"></p>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

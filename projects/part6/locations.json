@@ -1,0 +1,74 @@
+[
+    {
+        "_id": 1,
+        "name": "Lord of the Bite - Downtown",
+        "address": "123 Food Street, Foodville, CA 12345",
+        "phone": "(123) 456-7890",
+        "img_name": "images/lord_of_the_bite_downtown.jpg",
+        "latitude": 34.0522,
+        "longitude": -118.2437
+    },
+    {
+        "_id": 2,
+        "name": "Lord of the Bite - Uptown",
+        "address": "456 Gourmet Ave, Dinecity, TX 67890",
+        "phone": "(987) 654-3210",
+        "img_name": "images/lord_of_the_bite_uptown.jpg",
+        "latitude": 36.7783,
+        "longitude": -119.4179
+    },
+    {
+        "_id": 3,
+        "name": "Lord of the Bite - Riverside",
+        "address": "789 Treat Blvd, Snacktown, NY 11223",
+        "phone": "(555) 123-4567",
+        "img_name": "images/lord_of_the_bite_riverside.jpg",
+        "latitude": 40.7128,
+        "longitude": -74.0060
+    },
+    {
+        "_id": 4,
+        "name": "Lord of the Bite - Seaside",
+        "address": "101 Delicious Rd, Deliciousville, FL 33445",
+        "phone": "(321) 987-6543",
+        "img_name": "images/lord_of_the_bite_seaside.jpg",
+        "latitude": 25.7617,
+        "longitude": -80.1918
+    },
+    {
+        "_id": 5,
+        "name": "Lord of the Bite - Mountainview",
+        "address": "202 Peak Ave, Hightown, CO 67890",
+        "phone": "(345) 678-9012",
+        "img_name": "images/lord_of_the_bite_mountainview.jpg",
+        "latitude": 39.7392,
+        "longitude": -104.9903
+    },
+    {
+        "_id": 6,
+        "name": "Lord of the Bite - Lakefront",
+        "address": "303 Lakeside Dr, Waterside, WA 12345",
+        "phone": "(456) 789-0123",
+        "img_name": "images/lord_of_the_bite_lakefront.jpg",
+        "latitude": 47.6062,
+        "longitude": -122.3321
+    },
+    {
+        "_id": 7,
+        "name": "Lord of the Bite - City Center",
+        "address": "404 Central Blvd, Metropolis, IL 98765",
+        "phone": "(567) 890-1234",
+        "img_name": "images/lord_of_the_bite_citycenter.jpg",
+        "latitude": 41.8781,
+        "longitude": -87.6298
+    },
+    {
+        "_id": 8,
+        "name": "Lord of the Bite - Valleyview",
+        "address": "505 Horizon Rd, Green Valley, AZ 54321",
+        "phone": "(678) 901-2345",
+        "img_name": "images/lord_of_the_bite_valleyview.jpg",
+        "latitude": 33.4484,
+        "longitude": -112.0740
+    }
+]

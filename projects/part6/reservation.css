@@ -1,0 +1,271 @@
+/* Structure */
+:root {
+    --primary-color: #3498db; /* Primary color for accents */
+    --secondary-color: #f4f4f4; /* Light background color */
+    --text-color: #333; /* Dark text color */
+    --footer-color: #2c3e50; /* Footer background */
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: darkblue;
+}
+
+header, footer {
+    background-color: var(--footer-color);
+    color: white;
+    padding: 20px 0;
+}
+
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+/*Playing With Position*/
+#logo{
+   float: left;
+   height: 75px;
+   width: 75px;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+}
+
+
+/* Navigation */
+
+#main-nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--footer-color);
+    padding: 10px 0;
+}
+
+#main-nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+#main-nav li {
+    margin-right: 20px;
+}
+
+#main-nav a {
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px 15px;
+}
+
+#main-nav a:hover {
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+/* Typography */
+main {
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align:center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+}
+#toggle-nav div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hide-small{
+    display: none;
+}
+select, textarea {
+    width: 60%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Guest Selection */
+.guest-selection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.guest-selection button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Submit Button */
+#submit-btn {
+    background: cornflowerblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background: darkblue;
+}
+
+/* Success Message */
+#success-message {
+    display: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive Design for Smaller Devices */
+@media only screen and (max-width: 768px) {
+    #main-nav ul {
+        display: none; /* Hide the normal nav */
+    }
+
+    #toggle-nav {
+        display: block; /* Show the hamburger menu */
+        cursor: pointer;
+    }
+
+    #toggle-nav div {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    /* Show the mobile menu when toggled */
+    .show-nav {
+        display: flex !important; /* Ensure the menu appears */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: var(--footer-color);
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+
+    .show-nav li {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .show-nav a {
+        padding: 10px;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    .show-nav a:hover {
+        background-color: #2980b9;
+        border-radius: 5px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .w3-modal-content {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .grid-item {
+        padding: 15px;
+    }
+
+    /* Larger screens */
+    @media only screen and (min-width: 768px) {
+        .columns {
+            display: flex;
+        }
+
+        #main-nav li {
+            flex: 1;
+        }
+
+        #main-nav li:not(:last-child) {
+            border-right: 1px solid white;
+        }
+
+        #imgM, #imgB {
+            flex: 0 70%;
+        }
+
+        #toggle-nav {
+            display: none;
+        }
+
+        .hide-small {
+            display: flex;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .grid-item img {
+        width: 100%;
+    }
+
+    .w3-modal-content {
+        width: 100%;
+    }
+
+    .w3-button {
+        padding: 8px 16px;
+    }
+}
