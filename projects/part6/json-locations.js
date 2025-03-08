@@ -13,7 +13,7 @@ const getMap = async (latitude, longitude) => {
 
 // Fetches the list of restaurants from the JSON file
 const getRestaurants = async () => {
-    const url = "https://username.github.io/projects/part6/restaurants.json";  // Replace with your GitHub JSON URL
+    const url = "https://raw.githubusercontent.com/lordjr05/lordjr05.github.io/refs/heads/main/projects/part6/locations.json";  // Replace with your GitHub JSON URL
     
     try {
         const response = await fetch(url);
