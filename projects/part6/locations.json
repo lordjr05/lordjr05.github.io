@@ -13,7 +13,7 @@
         "name": "Lord of the Bite - Uptown",
         "address": "456 Gourmet Ave, Dinecity, TX 67890",
         "phone": "(987) 654-3210",
-        "img_name": "images/uptown.jpg",
+        "img_name": "images/uptown",
         "latitude": 36.7783,
         "longitude": -119.4179
     },
@@ -22,7 +22,7 @@
         "name": "Lord of the Bite - Riverside",
         "address": "789 Treat Blvd, Snacktown, NY 11223",
         "phone": "(555) 123-4567",
-        "img_name": "images/riverside.jpg",
+        "img_name": "images/riverside",
         "latitude": 40.7128,
         "longitude": -74.0060
     },

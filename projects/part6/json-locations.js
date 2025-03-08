@@ -25,7 +25,7 @@ const getRestaurants = async () => {
 
 // Displays the restaurants dynamically
 const showRestaurants = async () => {
-    const restaurantsSection = document.getElementById("restaurants"); // The section where you want to display restaurant info
+    const restaurantsSection = document.getElementById("restaurants"); 
     const restaurants = await getRestaurants();
 
     restaurants.forEach(async (restaurant) => {
@@ -39,9 +39,8 @@ const showRestaurants = async () => {
         img.alt = restaurant.name;
         section.append(img);
 
-        // Add a link to the restaurant's website (assuming you add a website URL)
         const a = document.createElement("a");
-        a.href = "#";  // Replace with actual website URL if available
+        a.href = "#";  
         section.append(a);
 
         const h3 = document.createElement("h3");
