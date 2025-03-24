@@ -27,7 +27,7 @@ a:hover {
 header, footer {
     background-color: var(--footer-color);
     color: white;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 
@@ -132,7 +132,6 @@ footer p {
 }
 
 
-
 /* Responsive Design for Smaller Devices */
 @media only screen and (max-width: 768px) {
     #main-nav ul {
@@ -223,6 +222,48 @@ footer p {
             display: flex;
         }
     }
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align elements from the top */
+    align-items: stretch; /* Stretch items to take up full width */
+    width: 100%;
+    max-width: 600px; /* Limit the maximum width of the form */
+    margin: 0 auto; /* Center form on the page */
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Ensure the input fields take full width */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width for the button */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#response-message {
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 480px) {
